@@ -1,6 +1,11 @@
 import click
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
+
+
+@click.command("guten-tag")
+def bonjour():
+    click.echo("guten tag")
 
 
 @click.command("version")
